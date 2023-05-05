@@ -7,19 +7,19 @@ import "./navbar.css";
 const Menu = () => (
   <>
     <p>
-      <a href="#">Home</a>
+      <a href="#home">Home</a>
     </p>
     <p>
-      <a href="#">WhatGPT3</a>
+      <a href="#wgpt3">WhatGPT3</a>
     </p>
     <p>
-      <a href="#">OpenAI</a>
+      <a href="#possibility">OpenAI</a>
     </p>
     <p>
-      <a href="#">Case Studies</a>
+      <a href="#features">Case Studies</a>
     </p>
     <p>
-      <a href="#">Library</a>
+      <a href="#blog">Library</a>
     </p>
   </>
 );
@@ -30,6 +30,7 @@ const Navbar = () => {
 
   return (
     <div className="gpt3__navbar">
+      
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
           <img src={logo} alt="logo" />
@@ -38,10 +39,12 @@ const Navbar = () => {
           <Menu />
         </div>
       </div>
+
       <div className="gpt3__navbar-sign">
         <p>sign in</p>
         <button type="button">Sign up</button>
       </div>
+
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
